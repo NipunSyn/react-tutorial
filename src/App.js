@@ -3,14 +3,16 @@ import "./App.css";
 import Greet from "./components/Greet";
 import Welcome from "./components/Welcome";
 import Hello from "./components/Hello";
+import Message from "./components/Message";
+import Counter from "./components/Counter";
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
+      <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Hello Bambaiii
+          Learn to React
         </p>
         <a
           className="App-link"
@@ -20,12 +22,30 @@ function App() {
         >
           Learn React
         </a>
-      </header> */}
+      </header>
 
-      {/* <Greet></Greet>
-      <Welcome></Welcome> */}
+      {/* <Hello name="John"></Hello>
+      <Hello name="Kane"></Hello>
+      <Hello name="Edge"></Hello> */}
 
-      <Hello></Hello>
+      {/* <Welcome></Welcome> */}
+
+      {/* using stateless functions */}
+      <Greet name="Edge" heroName="Batman">
+        <p>This is Children props</p>
+      </Greet>
+      <Greet name="John Cena" heroName="Jaggu">
+        <button>Fight</button>
+      </Greet>
+
+      {/* using stateful classes */}
+      <Welcome name="Edge" heroName="Batman"></Welcome>
+
+      {/* Using state */}
+      <Message name= "Me" heroName= "Myself"></Message>
+
+      {/* Using set state to make a counter */}
+      <Counter addValue= {3}></Counter>
     </div>
   );
 }
