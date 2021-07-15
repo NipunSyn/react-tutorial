@@ -8,6 +8,7 @@ import Counter from "./components/Counter";
 import FunctionClick from "./components/FunctionClick";
 import ClassClick from "./components/ClassClick";
 import EventBind from "./components/EventBind";
+import ParentComponent from "./components/ParentComponent";
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
         </p>
         {/* <FunctionClick></FunctionClick>
         <ClassClick></ClassClick> */}
-        <EventBind></EventBind>
+
+        {/* <EventBind></EventBind> */}
+        <ParentComponent></ParentComponent>
         <a
           className="App-link"
           href="https://reactjs.org"
