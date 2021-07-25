@@ -11,38 +11,30 @@ import EventBind from "./components/EventBind";
 import ParentComponent from "./components/ParentComponent";
 import UserGreeting from "./components/UserGreeting";
 import NamedList from "./components/NamedList";
+import Stylesheet from "./components/Stylesheet";
+import Inline from "./components/Inline";
+import "./appStyles.css";
+import styles from "./appStyles.module.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Learn to React
-        </p>
-        {/* <FunctionClick></FunctionClick>
+      <h1 className="error ">Error</h1>
+      <h1 className={styles.success}>Success</h1>
+      {/* <FunctionClick></FunctionClick>
         <ClassClick></ClassClick> */}
 
-        {/* <EventBind></EventBind> */}
+      {/* <EventBind></EventBind> */}
 
-        {/* passing methods as props */}
-        {/* <ParentComponent></ParentComponent> */}
+      {/* passing methods as props */}
+      {/* <ParentComponent></ParentComponent> */}
 
-        {/* <UserGreeting></UserGreeting> */}
+      {/* <UserGreeting></UserGreeting> */}
 
-        {/* List rendering */}
-        <NamedList></NamedList>
+      {/* List rendering */}
 
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-
+      {/* <Stylesheet primary={true}></Stylesheet>
+        <Inline></Inline> */}
       {/* <Hello name="John"></Hello>
       <Hello name="Kane"></Hello>
       <Hello name="Edge"></Hello> */}
@@ -50,21 +42,21 @@ function App() {
       {/* <Welcome></Welcome> */}
 
       {/* using stateless functions */}
-      <Greet name="Edge" heroName="Batman">
-        <p>This is Children props</p>
-      </Greet>
-      <Greet name="John Cena" heroName="Jaggu">
-        <button>Fight</button>
-      </Greet>
+      {/* <Greet name="Edge" heroName="Batman"> */}
+      {/* <p>This is Children props</p> */}
+      {/* </Greet> */}
+      {/* <Greet name="John Cena" heroName="Jaggu"> */}
+      {/* <button>Fight</button> */}
+      {/* </Greet> */}
 
       {/* using stateful classes */}
-      <Welcome name="Edge" heroName="Batman"></Welcome>
+      {/* <Welcome name="Edge" heroName="Batman"></Welcome> */}
 
       {/* Using state */}
-      <Message name= "Me" heroName= "Myself"></Message>
+      {/* <Message name= "Me" heroName= "Myself"></Message> */}
 
       {/* Using set state to make a counter */}
-      <Counter addValue= {3}></Counter>
+      {/* <Counter addValue= {3}></Counter> */}
     </div>
   );
 }
