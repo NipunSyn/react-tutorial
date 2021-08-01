@@ -16,11 +16,13 @@ import Inline from "./components/Inline";
 import "./appStyles.css";
 import styles from "./appStyles.module.css";
 import Form from "./components/Form";
+import LifecycleA from "./components/lifecycle/LifecycleA";
 
 function App() {
   return (
     <div className="App">
-      <Form></Form>
+      <LifecycleA></LifecycleA>
+      {/* <Form></Form> */}
       {/* <h1 className="error ">Error</h1>
       <h1 className={styles.success}>Success</h1> */}
       {/* <FunctionClick></FunctionClick>
