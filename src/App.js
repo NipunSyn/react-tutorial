@@ -18,13 +18,15 @@ import Form from "./components/Form";
 import LifecycleA from "./components/lifecycle/LifecycleA";
 import FragmentDemo from "./components/FragmentDemo";
 import Table from "./components/Table";
+import ParentComp from "./components/ParentComp";
 
 
 function App() {
   return (
     <div className="App">
-      <FragmentDemo></FragmentDemo>
-      <Table></Table>
+      <ParentComp></ParentComp>
+      {/* <FragmentDemo></FragmentDemo> */}
+      {/* <Table></Table> */}
       {/* <LifecycleA></LifecycleA> */}
       {/* <Form></Form> */}
       {/* <h1 className="error ">Error</h1>
